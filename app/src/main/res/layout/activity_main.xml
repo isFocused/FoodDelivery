@@ -66,7 +66,7 @@
             android:layout_marginStart="70dp"
             android:layout_marginEnd="70dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/elevation"
+            android:background="@drawable/custom_button_style"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
             android:text="@string/authorization_begin" />
