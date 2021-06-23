@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FoodDelivery</string>
+    <string name="authorization_title">Авторизация</string>
+    <string name="authorization_subtitle">Укажите свой телефоный номер, \nчтобы сделать заказ</string>
+    <string name="authorization_conditions">Авторизуясь я соглашаюсь с <u>условиями использования</u></string>
+    <string name="authorization_begin">Начать</string>
+    <string name="authorization_skip">Пропустить</string>
 </resources>
