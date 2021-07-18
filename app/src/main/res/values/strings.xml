@@ -5,4 +5,6 @@
     <string name="authorization_conditions">Авторизуясь я соглашаюсь с <u>условиями использования</u></string>
     <string name="authorization_begin">Начать</string>
     <string name="authorization_skip">Пропустить</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
