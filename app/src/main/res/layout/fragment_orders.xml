@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:id="@+id/frOrder2"
+    tools:context=".OrdersFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -94,10 +96,10 @@
                 android:layout_marginStart="7dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginBottom="6dp"
+                android:src="@drawable/soup"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:src="@drawable/soup"
                 tools:srcCompat="@drawable/soup" />
 
             <TextView
@@ -191,11 +193,11 @@
             android:fontFamily="@font/roboto_regular"
             android:gravity="top"
             android:hint="Укажите дополнительную информацию к заказу "
-            android:paddingTop="15dp"
+            android:inputType="textPersonName"
             android:paddingStart="8dp"
+            android:paddingTop="15dp"
             android:paddingEnd="8dp"
             android:paddingBottom="15dp"
-            android:inputType="textPersonName"
             android:textColorHint="#4D000000"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -300,10 +302,10 @@
                 android:layout_marginStart="7dp"
                 android:layout_marginTop="6dp"
                 android:layout_marginBottom="6dp"
+                android:src="@drawable/rolls"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:src="@drawable/rolls"
                 tools:srcCompat="@drawable/rolls" />
 
             <TextView
