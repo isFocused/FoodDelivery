@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/frOrder2"
+    android:id="@+id/frOrder"
     tools:context=".OrdersFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
