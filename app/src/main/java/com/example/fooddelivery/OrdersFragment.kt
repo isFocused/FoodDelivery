@@ -1,13 +1,11 @@
 package com.example.fooddelivery
 
 import android.os.Bundle
-import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
-import android.widget.TextView
+import com.example.fooddelivery.databinding.FragmentOrdersBinding
 
 class OrdersFragment : Fragment() {
 
@@ -22,26 +20,24 @@ class OrdersFragment : Fragment() {
         }
     }
 
-    var tvPhoneNumber: TextView? = null
-    var btClose: ImageButton? = null
+    private lateinit var binding: FragmentOrdersBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_orders, container, false)
+        binding = FragmentOrdersBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        tvPhoneNumber = view.findViewById(R.id.tvPhoneNumber)
-        btClose = view.findViewById(R.id.btClose)
         configureView()
     }
 
     private fun configureView() {
-        tvPhoneNumber?.text = arguments?.getString(PHONE) ?: "Null"
-        btClose?.setOnClickListener {
+        binding.tvPhoneNumber.text = arguments?.getString(PHONE) ?: "Null"
+        binding.btClose.setOnClickListener {
             activity?.onBackPressed()
         }
     }
