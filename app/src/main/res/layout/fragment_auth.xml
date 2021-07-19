@@ -74,7 +74,7 @@
             tools:ignore="InvalidId" />
 
         <Button
-            android:id="@+id/btBegin"
+            android:id="@+id/btSkip"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="70dp"

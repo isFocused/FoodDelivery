@@ -5,33 +5,29 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
+import com.example.fooddelivery.databinding.FragmentAuthBinding
 
 class AuthFragment : Fragment() {
 
-    private var nextButton: Button? = null
-    private var editTextView: EditText? = null
+    private lateinit var binding: FragmentAuthBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_auth, container, false)
+        binding = FragmentAuthBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        nextButton = view.findViewById(R.id.btStart)
-        editTextView = view.findViewById(R.id.tvPhoneNumber)
         configureStartButton()
     }
 
     private fun configureStartButton() {
-        nextButton?.setOnClickListener {
+        binding.btStart.setOnClickListener {
             val bundle = Bundle()
-            bundle.putString(OrdersFragment.PHONE, editTextView?.text.toString())
+            bundle.putString(OrdersFragment.PHONE, binding.tvPhoneNumber.text.toString())
             activity?.supportFragmentManager
                 ?.beginTransaction()
                 ?.replace(R.id.rootScreen, OrdersFragment.getNewInstance(bundle))
