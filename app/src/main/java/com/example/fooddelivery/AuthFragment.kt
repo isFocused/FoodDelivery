@@ -15,7 +15,8 @@ class AuthFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_auth, container, false)
+        binding = FragmentAuthBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -24,7 +25,7 @@ class AuthFragment : Fragment() {
     }
 
     private fun configureStartButton() {
-        binding.btBegin.setOnClickListener {
+        binding.btStart.setOnClickListener {
             val bundle = Bundle()
             bundle.putString(OrdersFragment.PHONE, binding.tvPhoneNumber.text.toString())
             activity?.supportFragmentManager
