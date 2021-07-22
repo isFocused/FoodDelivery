@@ -1,10 +1,11 @@
-package com.example.fooddelivery
+package com.example.fooddelivery.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.fooddelivery.Navigation
 import com.example.fooddelivery.databinding.FragmentAuthBinding
 
 class AuthFragment : Fragment() {
@@ -26,13 +27,7 @@ class AuthFragment : Fragment() {
 
     private fun configureStartButton() {
         binding.btStart.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putString(OrdersFragment.PHONE, binding.tvPhoneNumber.text.toString())
-            activity?.supportFragmentManager
-                ?.beginTransaction()
-                ?.replace(R.id.rootScreen, OrdersFragment.getNewInstance(bundle))
-                ?.addToBackStack(OrdersFragment.NAME_TAG)
-                ?.commit()
+            (activity as? Navigation)?.setupOrdersFragment(binding.tvPhoneNumber.text.toString())
         }
     }
 }

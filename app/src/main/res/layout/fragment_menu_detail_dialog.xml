@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frBottomSheet"
+    tools:context=".fragments.MenuDetailDialogFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginStart="16sp"
+        android:layout_marginEnd="16sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="31dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:backgroundTint= "#00FFFFFF"
+                android:src="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tom_yam_max" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Том Ям суп с морепродуктами \nмидии и креветки"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:lineHeight="23.5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="36dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/progressstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_vertical"
+                android:text="1 шт / 300 г"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/roboto_regular"
+                android:gravity="center_vertical"
+                android:text="312 ккал"
+                android:layout_marginStart="17dp"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Бульон из пряного говяжьего мясного супа с кокосовым молоком, грибами, томатами, зеленью. Подается с добавками на выбор, отварным белым рисом или рисовой вермишелью на выбор"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp"
+            app:lineHeight="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.example.fooddelivery.views.Stepper
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"
+                android:id="@+id/bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:background="@drawable/custom_button_style"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:text="235 ₽" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
