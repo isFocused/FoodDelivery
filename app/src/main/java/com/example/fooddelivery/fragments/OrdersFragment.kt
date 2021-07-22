@@ -16,7 +16,9 @@ class OrdersFragment : Fragment() {
 
         fun getNewInstance(phoneNumber: String) : OrdersFragment {
             return OrdersFragment().apply {
-                PHONE to phoneNumber
+                var bundle = Bundle()
+                bundle.putString(PHONE, phoneNumber)
+                arguments = bundle
             }
         }
     }
@@ -42,6 +44,7 @@ class OrdersFragment : Fragment() {
             activity?.onBackPressed()
         }
         binding.clAll.setOnClickListener {
+            // экшен повесил специально на весь стек, знаю, что это не лучшая идея, но на каждый элемент тоже не айс
             (activity as? Navigation)?.openMenuDialog()
         }
     }
