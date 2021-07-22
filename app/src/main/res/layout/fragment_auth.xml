@@ -8,7 +8,7 @@
     android:layout_marginEnd="16dp"
     android:layout_marginBottom="23dp"
     android:id="@+id/frAuth"
-    tools:context=".AuthFragment">
+    tools:context=".fragments.AuthFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
