@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F4F5F8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FirstFragment">
+
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/shape"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ingDish5"
+                android:layout_width="128dp"
+                android:layout_height="117dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/soup"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/soup" />
+
+            <TextView
+                android:id="@+id/tvTitleDish5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="13dp"
+                android:text="Том Ям суп с морепродуктами"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ingDish5"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDescriptionDish5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Бульон из пряного говяжьего мясного супа с кокосовым молока"
+                app:layout_constraintBottom_toTopOf="@+id/tvPrice5"
+                app:layout_constraintEnd_toEndOf="@+id/tvTitleDish5"
+                app:layout_constraintStart_toStartOf="@+id/tvTitleDish5"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleDish5"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvPrice5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/cornered_text_view"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="115 ₽"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvTitleDish5"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionDish5" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/shape"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ingDish4"
+                android:layout_width="128dp"
+                android:layout_height="117dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/soup"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/soup" />
+
+            <TextView
+                android:id="@+id/tvTitleDish4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="13dp"
+                android:text="Том Ям суп с морепродуктами"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ingDish4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDescriptionDish4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Бульон из пряного говяжьего мясного супа с кокосовым молока"
+                app:layout_constraintBottom_toTopOf="@+id/tvPrice4"
+                app:layout_constraintEnd_toEndOf="@+id/tvTitleDish4"
+                app:layout_constraintStart_toStartOf="@+id/tvTitleDish4"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleDish4"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvPrice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/cornered_text_view"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="115 ₽"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvTitleDish4"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionDish4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/shape"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ingDish3"
+                android:layout_width="128dp"
+                android:layout_height="117dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/soup"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/soup" />
+
+            <TextView
+                android:id="@+id/tvTitleDish3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="13dp"
+                android:text="Том Ям суп с морепродуктами"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ingDish3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDescriptionDish3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Бульон из пряного говяжьего мясного супа с кокосовым молока"
+                app:layout_constraintBottom_toTopOf="@+id/tvPrice3"
+                app:layout_constraintEnd_toEndOf="@+id/tvTitleDish3"
+                app:layout_constraintStart_toStartOf="@+id/tvTitleDish3"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleDish3"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvPrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/cornered_text_view"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="115 ₽"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvTitleDish3"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionDish3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:background="@drawable/shape"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ingDish2"
+                android:layout_width="128dp"
+                android:layout_height="117dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"
+                android:src="@drawable/soup"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/soup" />
+
+            <TextView
+                android:id="@+id/tvTitleDish2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="13dp"
+                android:text="Том Ям суп с морепродуктами"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ingDish2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDescriptionDish2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Бульон из пряного говяжьего мясного супа с кокосовым молока"
+                app:layout_constraintBottom_toTopOf="@+id/tvPrice2"
+                app:layout_constraintEnd_toEndOf="@+id/tvTitleDish2"
+                app:layout_constraintStart_toStartOf="@+id/tvTitleDish2"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitleDish2"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/cornered_text_view"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="115 ₽"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvTitleDish2"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionDish2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:background="@drawable/shape"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ingDish1"-->
+<!--                android:layout_width="128dp"-->
+<!--                android:layout_height="117dp"-->
+<!--                android:layout_marginStart="4dp"-->
+<!--                android:layout_marginTop="14dp"-->
+<!--                android:layout_marginBottom="14dp"-->
+<!--                android:src="@drawable/soup"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                tools:srcCompat="@drawable/soup" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvTitleDish1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:layout_marginTop="14dp"-->
+<!--                android:layout_marginEnd="13dp"-->
+<!--                android:text="Том Ям суп с морепродуктами"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/ingDish1"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvDescriptionDish1"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:text="Бульон из пряного говяжьего мясного супа с кокосовым молока"-->
+<!--                app:layout_constraintBottom_toTopOf="@+id/tvPrice1"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/tvTitleDish1"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/tvTitleDish1"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvTitleDish1"-->
+<!--                app:layout_constraintVertical_bias="0.0" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvPrice1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                android:background="@drawable/cornered_text_view"-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:paddingRight="10dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:text="115 ₽"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/tvTitleDish1"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tvDescriptionDish1" />-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    </LinearLayout>
+</ScrollView>

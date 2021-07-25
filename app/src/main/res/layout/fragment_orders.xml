@@ -368,7 +368,7 @@
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
 
             <TextView
-                android:id="@+id/textView20"
+                android:id="@+id/tvPrice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -418,7 +418,7 @@
                 android:fontFamily="@font/roboto_regular"
                 android:text="Дисерт круасан с грецкими"
                 android:textColor="@color/black"
-                app:layout_constraintEnd_toEndOf="@+id/textView20"
+                app:layout_constraintEnd_toEndOf="@+id/tvPrice"
                 app:layout_constraintStart_toEndOf="@+id/imageView3"
                 app:layout_constraintTop_toTopOf="parent" />
 

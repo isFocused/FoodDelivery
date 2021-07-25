@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentActivity
 import com.example.fooddelivery.fragments.AuthFragment
 import com.example.fooddelivery.fragments.MenuDetailDialogFragment
 import com.example.fooddelivery.fragments.OrdersFragment
+import com.example.fooddelivery.fragments.PagerFragment
 
 class MainActivity : FragmentActivity(), Navigation {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,7 +17,7 @@ class MainActivity : FragmentActivity(), Navigation {
     override fun setupAuthFragment() {
         supportFragmentManager
             .beginTransaction()
-            .add(R.id.rootScreen, AuthFragment())
+            .add(R.id.rootScreen, PagerFragment())
             .commit()
     }
 
