@@ -27,7 +27,7 @@ class AuthFragment : Fragment() {
 
     private fun configureStartButton() {
         binding.btStart.setOnClickListener {
-            (activity as? Navigation)?.setupOrdersFragment(binding.tvPhoneNumber.text.toString())
+            (activity as? Navigation)?.openViewPager()
         }
     }
 }
