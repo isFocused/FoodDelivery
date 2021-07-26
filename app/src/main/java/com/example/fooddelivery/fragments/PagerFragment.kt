@@ -10,7 +10,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 
 class PagerFragment : Fragment() {
 
-    private val stringArray: List<String> = listOf("Всё", "Фастфуд", "Десерты")
+    private val stringArray: List<String> = listOf("Всё", "Фаст-фуд", "Десерты")
     private lateinit var binding: FragmentPagerBinding
 
     override fun onCreateView(
@@ -19,9 +19,9 @@ class PagerFragment : Fragment() {
     ): View? {
         binding = FragmentPagerBinding.inflate(inflater, container, false)
         binding.vpMain.adapter = ViewPagerAdapter(this).apply {
-            addFragment(FirstFragment())
-            addFragment(FirstFragment())
-            addFragment(FirstFragment())
+            addFragment(PageFragment())
+            addFragment(PageFragment())
+            addFragment(PageFragment())
         }
         TabLayoutMediator(binding.tbMain, binding.vpMain) { tab, position ->
             tab.text = stringArray[position]

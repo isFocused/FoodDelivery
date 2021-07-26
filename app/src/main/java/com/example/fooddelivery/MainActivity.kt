@@ -17,7 +17,7 @@ class MainActivity : FragmentActivity(), Navigation {
     override fun setupAuthFragment() {
         supportFragmentManager
             .beginTransaction()
-            .add(R.id.rootScreen, PagerFragment())
+            .add(R.id.rootScreen, AuthFragment())
             .commit()
     }
 
@@ -32,5 +32,13 @@ class MainActivity : FragmentActivity(), Navigation {
     override fun openMenuDialog() {
         MenuDetailDialogFragment()
             .show(supportFragmentManager, MenuDetailDialogFragment.NAME_TAG)
+    }
+
+    override fun openViewPager() {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.rootScreen, PagerFragment())
+            .addToBackStack(OrdersFragment.NAME_TAG)
+            .commit()
     }
 }
